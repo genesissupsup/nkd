@@ -5,7 +5,7 @@ using Autofac;
 using Orchard.Environment;
 using Orchard.WarmupStarter;
 using PushSharp;
-using PushSharp.Android;
+using PushSharp.Google;
 
 namespace Orchard.Web {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 

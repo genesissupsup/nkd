@@ -9,7 +9,7 @@ using System.ComponentModel;
 using System.Web.Mvc;
 using System.Collections;
 using DevExpress.XtraReports.UI;
-using DevExpress.Web.ASPxClasses.Internal;
+using DevExpress.Web.Internal;
 using DevExpress.XtraReports.Parameters;
 using NKD.ViewModels;
 

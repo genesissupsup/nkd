@@ -44,7 +44,7 @@ namespace NKD.Win
             }
             try
             {
-                var ci = Checkin();
+                // var ci = Checkin();
                 winApplication.Setup();
                 
                 if (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed && System.Deployment.Application.ApplicationDeployment.CurrentDeployment.IsFirstRun)

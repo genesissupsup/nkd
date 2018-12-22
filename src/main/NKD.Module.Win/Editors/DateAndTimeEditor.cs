@@ -9,7 +9,7 @@ using DevExpress.ExpressApp.Win.Editors;
 
 namespace NKD.Module.Win.Editors
 {
-    [PropertyEditor(typeof(DateTime))]
+    [PropertyEditor(typeof(DateTime), true)]
     public class DateAndTimeEditor : DatePropertyEditor
     {
         public DateAndTimeEditor(Type objectType, IModelMemberViewItem item) : base(objectType, item) { }

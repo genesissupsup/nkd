@@ -35,7 +35,7 @@ namespace NKD.Module.Win.Controllers
             {
                 IObjectSpace objectSpace = Application.CreateObjectSpace();
 
-                var o = (System.Data.Objects.DataClasses.EntityObject)e.Action.SelectionContext.CurrentObject;
+                var o = (System.Data.Entity.Core.Objects.DataClasses.EntityObject)e.Action.SelectionContext.CurrentObject;
                 var c = ((DevExpress.ExpressApp.EF.EFObjectSpace)objectSpace).ObjectContext;
                 var table = NKD.Module.BusinessObjects.BusinessObjectHelper.GetTableName(c, e.Action.SelectionContext.CurrentObject.GetType());
                 var value = (Guid)o.EntityKey.EntityKeyValues[0].Value;

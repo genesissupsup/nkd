@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DevExpress.Web.ASPxUploadControl;
+using DevExpress.Web;
 using System.IO;
 using System.Web.Mvc;
 using System.Web.UI;
@@ -14,13 +14,13 @@ namespace NKD.Helpers
         public const string TempUploadDirectory = "~/Modules/NKD/Media";
         public const string ThumbnailFormat = "Thumbnail{0}{1}";
 
-        public static readonly DevExpress.Web.ASPxUploadControl.ValidationSettings AppendModelValidationSettings = new DevExpress.Web.ASPxUploadControl.ValidationSettings
+        public static readonly DevExpress.Web.UploadControlValidationSettings AppendModelValidationSettings = new DevExpress.Web.UploadControlValidationSettings
         {
             AllowedFileExtensions = new string[] { ".csv" },
             MaxFileSize = 209715200
         };
 
-        public static readonly DevExpress.Web.ASPxUploadControl.ValidationSettings AppendAnythingValidationSettings = new DevExpress.Web.ASPxUploadControl.ValidationSettings
+        public static readonly DevExpress.Web.UploadControlValidationSettings AppendAnythingValidationSettings = new DevExpress.Web.UploadControlValidationSettings
         {           
             MaxFileSize = 209715200
         };
