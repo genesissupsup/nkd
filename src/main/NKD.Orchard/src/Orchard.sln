@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}"
 EndProject
@@ -273,6 +273,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Templates", "Orchard.Web\Modules\Orchard.Templates\Orchard.Templates.csproj", "{10AB3CE2-A720-467F-9EC8-EBB4BAC9A1C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNX.Shared", "..\..\..\..\..\crednexus\src\main\CNX.Shared\CNX.Shared.csproj", "{359608D7-FAFE-40E9-90C6-BD6DF1C0FDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contrib.Mod.ChangePassword", "Orchard.Web\Modules\Contrib.Mod.ChangePassword\Contrib.Mod.ChangePassword.csproj", "{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1769,6 +1771,22 @@ Global
 		{359608D7-FAFE-40E9-90C6-BD6DF1C0FDCC}.Staging AR|Any CPU.Build.0 = Release|Any CPU
 		{359608D7-FAFE-40E9-90C6-BD6DF1C0FDCC}.Staging|Any CPU.ActiveCfg = Release|Any CPU
 		{359608D7-FAFE-40E9-90C6-BD6DF1C0FDCC}.Staging|Any CPU.Build.0 = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Staging AR|Any CPU.ActiveCfg = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Staging AR|Any CPU.Build.0 = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB}.Staging|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1864,5 +1882,9 @@ Global
 		{0BACBE0F-A4C4-4385-AC83-50A6AB1A1122} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{10AB3CE2-A720-467F-9EC8-EBB4BAC9A1C9} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{359608D7-FAFE-40E9-90C6-BD6DF1C0FDCC} = {383DBA32-4A3E-48D1-AAC3-75377A694452}
+		{078321F9-A48A-4A88-8C14-BEB9C9EEDCBB} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55E3A2FD-A2CA-47CD-B308-F9CD442A87B7}
 	EndGlobalSection
 EndGlobal

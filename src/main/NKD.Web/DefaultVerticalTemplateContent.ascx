@@ -1,21 +1,19 @@
 ﻿<%@ Control Language="C#" CodeBehind="DefaultVerticalTemplateContent.ascx.cs" ClassName="DefaultVerticalTemplateContent" Inherits="NKD.Web.DefaultVerticalTemplateContent" %>
-<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxRoundPanel"
+<%@ Register Assembly="DevExpress.Web.v18.2" Namespace="DevExpress.Web"
     TagPrefix="dxrp" %>
-<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxEditors"
+<%@ Register Assembly="DevExpress.Web.v18.2" Namespace="DevExpress.Web"
     TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxPanel"
-    TagPrefix="dxrp" %>
-<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxSplitter"
-    TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxGlobalEvents"
+
+
+<%@ Register Assembly="DevExpress.Web.v18.2" Namespace="DevExpress.Web"
     TagPrefix="dxge" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v13.1" Namespace="DevExpress.ExpressApp.Web.Templates.ActionContainers"
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v18.2" Namespace="DevExpress.ExpressApp.Web.Templates.ActionContainers"
     TagPrefix="cc2" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v13.1" Namespace="DevExpress.ExpressApp.Web.Templates"
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v18.2" Namespace="DevExpress.ExpressApp.Web.Templates"
     TagPrefix="cc3" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v13.1" Namespace="DevExpress.ExpressApp.Web.Controls"
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v18.2" Namespace="DevExpress.ExpressApp.Web.Controls"
     TagPrefix="cc4" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v13.1" Namespace="DevExpress.ExpressApp.Web.Templates.Controls"
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v18.2" Namespace="DevExpress.ExpressApp.Web.Templates.Controls"
     TagPrefix="tc" %>
 <div class="VerticalTemplate BodyBackColor">
     <dxge:ASPxGlobalEvents ID="GE" ClientInstanceName="GE" ClientSideEvents-EndCallback="AdjustSize"

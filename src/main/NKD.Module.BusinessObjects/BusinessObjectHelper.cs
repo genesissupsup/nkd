@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using System.Data.Objects;
 using System.Text.RegularExpressions;
 using System.Collections.Concurrent;
+using System.Data.Entity.Core.Objects;
 
 namespace NKD.Module.BusinessObjects
 {

@@ -39,7 +39,7 @@ namespace NKD.Web
 
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args)
         {
-            //args.ObjectSpaceProvider = new XPObjectSpaceProviderThreadSafe(args.ConnectionString, args.Connection);
+            //args.ObjectSpaceProvider = new XPObjectSpaceProvider(args.ConnectionString, args.Connection, true);
 
             args.ObjectSpaceProviders.Add(new EFObjectSpaceProvider(
             typeof(NKDC), (TypesInfo)TypesInfo, null, args.ConnectionString,

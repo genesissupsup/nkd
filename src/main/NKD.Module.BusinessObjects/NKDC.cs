@@ -1,14 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Data.EntityClient;
-using System.Data.Objects;
-using System.Data.Objects.DataClasses;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 using System.Reflection;
 using System.Configuration;
 using System.Transactions;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Core.EntityClient;
+using System.Data.Entity;
 
 namespace NKD.Module.BusinessObjects
 {
@@ -163,14 +163,14 @@ namespace NKD.Module.BusinessObjects
         {
 
             var c = this.ObjectStateManager
-            .GetObjectStateEntries(System.Data.EntityState.Added)
-            .Select(entry => (System.Data.Objects.DataClasses.EntityObject)entry.Entity);
+            .GetObjectStateEntries(EntityState.Added)
+            .Select(entry => (System.Data.Entity.Core.Objects.DataClasses.EntityObject)entry.Entity);
 
-            var t = this.MetadataWorkspace.GetEntityContainer(this.DefaultContainerName, System.Data.Metadata.Edm.DataSpace.CSpace);
+            var t = this.MetadataWorkspace.GetEntityContainer(this.DefaultContainerName, System.Data.Entity.Core.Metadata.Edm.DataSpace.CSpace);
             foreach (var o in c)
             {
                 var key = t.BaseEntitySets[o.EntityKey.EntitySetName].ElementType.KeyMembers[0];
-                if (((System.Data.Metadata.Edm.PrimitiveType)key.TypeUsage.EdmType).ClrEquivalentType == typeof(Guid))
+                if (((System.Data.Entity.Core.Metadata.Edm.PrimitiveType)key.TypeUsage.EdmType).ClrEquivalentType == typeof(Guid))
                 {
                     PropertyInfo prop = o.GetType().GetProperty(key.Name, BindingFlags.Public | BindingFlags.Instance);
                     if (null != prop && prop.CanWrite && (Guid)prop.GetValue(o) == Guid.Empty)

@@ -11,8 +11,8 @@ using Orchard.Core.Common.Models;
 
 namespace Belitsoft.Orchard.Faq.Controllers
 {
-    
-    public class FaqWidgetAjaxController :Controller
+
+    public class FaqWidgetAjaxController : Controller
     {
         private readonly IFaqService _faqService;
 
@@ -25,7 +25,7 @@ namespace Belitsoft.Orchard.Faq.Controllers
         public JsonResult GetTypedFaq(int faqTypeId)
         {
             List<ViewFaqViewModel> model = new List<ViewFaqViewModel>();
-            
+
             model = _faqService.GetTypedFaqs(faqTypeId).Select(retrieveFaq).ToList();
 
             return Json(model);

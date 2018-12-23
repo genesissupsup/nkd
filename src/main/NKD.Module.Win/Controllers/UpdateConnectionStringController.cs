@@ -17,17 +17,32 @@ using DevExpress.ExpressApp.SystemModule;
 
 namespace NKD.Module.Win.Controllers
 {
-
-    public class UpdateConnectionStringController : NewObjectViewController
+    public class UpdateConnectionStringController : ViewController
     {
 
         public UpdateConnectionStringController()
         {
-            var myAction = new SimpleAction(this, "Update Connection String", DevExpress.Persistent.Base.PredefinedCategory.Tools);
-            myAction.Execute += myAction_Execute;
-            myAction.ImageName = "Action_ResetPassword";
-            Actions.Add(myAction);
 
+        }
+
+        protected override void OnActivated()
+        {
+            base.OnActivated();
+
+            var newController = Frame.GetController<NewObjectViewController>();
+            if (newController != null)
+            {
+                var myAction = new SimpleAction(this, "UpdateConnectionString" + this.View.ObjectTypeInfo.Type.AssemblyQualifiedName, DevExpress.Persistent.Base.PredefinedCategory.Tools);
+                myAction.Execute += myAction_Execute;
+                myAction.Caption = "Update Connection String";
+                myAction.ImageName = "Action_ResetPassword";
+                newController.Actions.Add(myAction);
+            }
+        }
+
+        protected override void OnDeactivated()
+        {
+            base.OnDeactivated();
         }
 
         void myAction_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
@@ -36,4 +51,24 @@ namespace NKD.Module.Win.Controllers
             f.ShowDialog();
         }
     }
+
+    //public class UpdateConnectionStringController : NewObjectViewController
+    //{
+
+    //    public UpdateConnectionStringController()
+    //    {
+    //        var myAction = new SimpleAction(this, "UpdateConnectionString" + this.View.ObjectTypeInfo.Type.AssemblyQualifiedName, DevExpress.Persistent.Base.PredefinedCategory.Tools);
+    //        myAction.Execute += myAction_Execute;
+    //        myAction.Caption = "Update Connection String";
+    //        myAction.ImageName = "Action_ResetPassword";
+    //        Actions.Add(myAction);
+
+    //    }
+
+    //    void myAction_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
+    //    {
+    //        var f = new NKD.Module.Win.Controllers.UpdateConnectionString(Application);
+    //        f.ShowDialog();
+    //    }
+    //}
 }

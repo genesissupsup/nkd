@@ -1,7 +1,7 @@
 ﻿using System;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Web.Editors;
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 using DevExpress.ExpressApp.Web.Editors.ASPx;
 using DevExpress.Persistent.Base;
 

@@ -7,7 +7,7 @@ using DevExpress.Persistent.Base;
 using System.IO;
 using DevExpress.Xpo;
 using DevExpress.Xpo.Metadata;
-using System.Data.Spatial;
+using System.Data.Entity.Spatial;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NKD.Module.BusinessObjects

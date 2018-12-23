@@ -74,8 +74,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="DevExpress.Persistent.Base.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\..\NKD.Orchard\lib\devexpress\DevExpress.Persistent.Base.v13.1.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.Base.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\NKD.Orchard\lib\EntityFramework\EntityFramework.dll</HintPath>
